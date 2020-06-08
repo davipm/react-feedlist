@@ -1,0 +1,69 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the Post Item component.
+// -----------------------------------------------------------------------------
+
+.post {
+  margin-top: 20px;
+  padding: 20px;
+  color: var(--post-color);
+  background-color: var(--post-bg);
+  border-radius: 8px;
+}
+
+.post__header {
+  display: flex;
+}
+
+.post__details {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  margin-left: 10px;
+  color: var(--post-details-color);
+
+  .details-name {
+    margin-bottom: 3px;
+    font-size: 14px;
+    color: var(--details-name);
+    font-weight: bold;
+  }
+}
+
+.post__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.post__content {
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.post__comments {
+  margin-top: 20px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--divider-color);
+}
+
+.comment {
+  display: flex;
+  margin-top: 20px;
+
+  p {
+    margin-left: 15px;
+    padding: 15px;
+    font-size: 0.9rem;
+    background-color: var(--divider-color);
+    border-radius: 20px;
+  }
+
+  span {
+    margin-right: 6px;
+    font-weight: bold;
+  }
+}

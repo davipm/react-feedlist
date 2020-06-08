@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header component.
+// -----------------------------------------------------------------------------
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--header-bg);
+}
+
+.nav {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 42px;
+  color: #ffffff;
+  font-size: 14px;
+
+  @media (min-width: 1000px) {
+    max-width: 980px;
+  }
+}
+
+.header-logo {
+  height: 24px;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out;
+
+    &:hover {
+      color: var(--details-name);
+    }
+  }
+}
